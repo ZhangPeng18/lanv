@@ -10,27 +10,23 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'index',
     component: index
   },
   {
     path: '/index',
-    name: 'index',
     component: index
   },
   {
     path: '/chatrecord',
-    name: 'chatrecord',
     component: chatrecord
-  },
+},
   {
     path: '/contact',
-    name: 'contact',
     component: contact
+
   },
   {
     path: '/userPu',
-    name: 'userPu',
     component: userPu
   }
 

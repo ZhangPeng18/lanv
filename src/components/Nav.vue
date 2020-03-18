@@ -1,27 +1,19 @@
 <template>
     <div>
         <nav class="nav-bar nav-bar-tab">
-            <a class="nav-tab-item " href="#/index" >
-                <span class=" nav-icon  icon-uniE90A"></span>
-                <span class="nav-tab-label">首页</span>
-            </a>
-            <a href="#/contact"  class="nav-tab-item" >
-                <span class="nav-icon  icon-uniE919"></span>
-                <span class="nav-tab-label">通讯录</span>
-            </a>
-            <a href="#/chatrecord" class="nav-tab-item" >
-                <span class="nav-icon icon-uniE903"><span class="nav-badge">1</span></span>
-                <span class="nav-tab-label">消息</span>
-            </a>
-            <a href="#/userPu" class="nav-tab-item"  >
-                <span class="nav-icon icon-uniE90B"></span>
-                <span class="nav-tab-label">我的</span>
-            </a>
+             <navindex path="/index" class="nav-tab-item "></navindex>
+             <navchat path="/chatrecord" class="nav-tab-item "></navchat>
+             <navcont path="/contact" class="nav-tab-item "></navcont>
+             <navuspu path="/userPu" class="nav-tab-item "></navuspu>
         </nav>
     </div>
 </template>
 
 <script>
+    import navindex from '@/components/nav/navindex'
+    import navchat from '@/components/nav/navchat'
+    import navcont from '@/components/nav/navcont'
+    import navuspu from '@/components/nav/navuspu'
     export default {
         name: "Nav", data() {
             return{
@@ -29,7 +21,7 @@
             }
         },
         components:{
-
+        navindex,navchat,navcont,navuspu
         },
         methods:{
 
