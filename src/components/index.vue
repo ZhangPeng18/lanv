@@ -20,14 +20,14 @@
             <div class="m-slider" id="slider">
                 <div class="ks_dbox ks_ts">
                     <div class="ks_wrap">
-                        <img src="~@/images/j-banner03.jpg">
+                        <img :src="ks_images"><!--~@/images/j-banner03.jpg-->
                     </div>
-                    <div class="ks_wrap">
+                  <!--  <div class="ks_wrap">
                         <img src="~@/images/j-banner02.jpg">
                     </div>
                     <div class="ks_wrap">
                         <img src="~@/images/j-banner03.jpg">
-                    </div>
+                    </div> -->
                 </div>
                 <div class="ks-circles"><ul class="ks_wt"></ul></div>
             </div>
@@ -242,13 +242,18 @@
         name: "index",
         data() {
             return{
-
+                ks_images: require("@/images/j-banner03.jpg"),
+                times: null
             }
         },
         components:{
 
         },
         methods:{
+            image(){
+            this.times=setInterval();
+            }
+
 
         }
     }

@@ -1,9 +1,9 @@
 <template>
     <div>
-        <a href="#/chatrecord" :class="{nav_active: !isActive}" class="nav-tab-item" >
+        <router-link to="/chatrecord"  replace :class="{nav_active: !isActive}" class="nav-tab-item" >
             <span class="nav-icon icon-uniE903"><span class="nav-badge">1</span></span>
             <span class="nav-tab-label">消息</span>
-        </a>
+        </router-link>
     </div>
 </template>
 

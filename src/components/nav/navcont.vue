@@ -1,9 +1,9 @@
 <template>
     <div>
-        <a href="#/contact"  :class="{nav_active: !isActive}" class="nav-tab-item" >
+        <router-link to="/contact"  replace :class="{nav_active: !isActive}" class="nav-tab-item" >
             <span class="nav-icon  icon-uniE919"></span>
             <span class="nav-tab-label">通讯录</span>
-        </a>
+        </router-link>
     </div>
 </template>
 

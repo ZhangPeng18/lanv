@@ -1,9 +1,9 @@
 <template>
     <div>
-        <a href="#/userPu" :class="{nav_active: !isActive}" class="nav-tab-item"  >
+        <router-link to="/userPu"  replace :class="{nav_active: !isActive}" class="nav-tab-item"  >
             <span class="nav-icon icon-uniE90B"></span>
             <span class="nav-tab-label">我的</span>
-        </a>
+        </router-link>
     </div>
 </template>
 

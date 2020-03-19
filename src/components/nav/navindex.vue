@@ -1,9 +1,9 @@
 <template>
     <div>
-        <a :class="{nav_active: !isActive}" class="nav-tab-item " href="#/index" >
+        <router-link :class="{nav_active: !isActive}" class="nav-tab-item " to="/index"  replace >
             <span class=" nav-icon  icon-uniE90A"></span>
             <span class="nav-tab-label">首页</span>
-        </a>
+        </router-link>
     </div>
 </template>
 
