@@ -50,7 +50,6 @@ export default {
     }
   },
   computed: {
-
   }
 
 }
@@ -58,6 +57,4 @@ export default {
 
 <style scoped>
   @import "~@/css/index.css";
-  @import "~@/css/bass.css";
-  @import "~@/assets/fonts/iconfont.css";
 </style>
